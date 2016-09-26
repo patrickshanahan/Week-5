@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtFirst: UITextField!
     @IBOutlet weak var txtLast: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtAddress: UITextField!
+    @IBOutlet weak var txtCity: UITextField!
+    @IBOutlet weak var txtState: UITextField!
+    @IBOutlet weak var txtZip: UITextField!
+    @IBOutlet weak var txtPhone: UITextField!
     
+
 // 1) Add MessageBox function using AlertView
     func MsgBox(message:String)
     {
@@ -36,7 +42,13 @@ class ViewController: UIViewController {
         //forces resign first responder and hides keyboard
         txtFirst.endEditing(true)
         txtLast.endEditing(true)
+        txtAddress.endEditing(true)
+        txtCity.endEditing(true)
+        txtState.endEditing(true)
+        txtZip.endEditing(true)
+        txtPhone.endEditing(true)
         txtEmail.endEditing(true)
+
        
 
         
@@ -49,6 +61,11 @@ class ViewController: UIViewController {
         //forces resign first responder and hides keyboard
         txtFirst.endEditing(true)
         txtLast.endEditing(true)
+        txtAddress.endEditing(true)
+        txtCity.endEditing(true)
+        txtState.endEditing(true)
+        txtZip.endEditing(true)
+        txtPhone.endEditing(true)
         txtEmail.endEditing(true)
 
        
@@ -181,11 +198,16 @@ class ViewController: UIViewController {
         //format text
         
         //existing contents of txtContacts, newline, txtFirst, newline, txtLast, newline, txtEmail, newline
-        txtContacts.text = "\(txtContacts.text!) \n\(txtFirst.text!) \n\(txtLast.text!) \n\(txtEmail.text!)\n"
+        txtContacts.text = "\(txtContacts.text!) \n\(txtFirst.text!) \n\(txtLast.text!) \n\(txtEmail.text!) \n\(txtAddress.text!) \n\(txtCity.text!) \n\(txtState.text!) \n\(txtZip.text!) \n\(txtPhone.text!)\n"
         //clear textboxes
         txtFirst.text = ""
         txtLast.text = ""
         txtEmail.text = ""
+        txtAddress.text = ""
+        txtCity.text = ""
+        txtState.text = ""
+        txtZip.text = ""
+        txtPhone.text = ""
         
         //load scrollview
         //declare CGPoint ScrollPoint
